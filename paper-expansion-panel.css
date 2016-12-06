@@ -28,10 +28,10 @@ paper-material:hover {
 }
 
 /* EXPANSION STATES */
-:host[expanded] paper-material:hover{
+:host([expanded]) paper-material:hover{
   background: var(--paper-expansion-panel-background-color, #fff);
 }
-:host[expanded] paper-material{
+:host([expanded]) paper-material{
   box-shadow:
     0 2px 2px 0 rgba(0, 0, 0, 0.14),
     0 1px 5px 0 rgba(0, 0, 0, 0.12),
@@ -39,20 +39,20 @@ paper-material:hover {
   padding: 24px 24px 0px 24px;
   margin: 24px 0;
 }
-:host[expanded] iron-icon {
+:host([expanded]) iron-icon {
   opacity: 0;
 }
-:host[expanded] .expansion-panel-content {
+:host([expanded]) .expansion-panel-content {
   opacity: 1;
 }
-:host[expanded] .expansion-panel-value,
-:host[expanded] .expansion-panel-meta {
+:host([expanded]) .expansion-panel-value,
+:host([expanded]) .expansion-panel-meta {
   opacity: 0;
 }
-:host[expanded] .expansion-panel-meta {
+:host([expanded]) .expansion-panel-meta {
   max-height: 0;
 }
-:host[expanded] .expansion-panel-title {
+:host([expanded]) .expansion-panel-title {
   text-rendering: geometricPrecision;
   font-weight: bold;
 }
